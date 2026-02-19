@@ -284,3 +284,29 @@ section {
     grid-template-columns: 1fr 1.2fr;
   }
 }
+
+
+/* LOCATION PAGE */
+
+.location-layout{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.location-info p{
+  line-height: 1.6;
+}
+
+.location-map iframe{
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.1);
+}
+
+/* Desktop = 2 columns */
+@media (min-width: 64rem){
+  .location-layout{
+    grid-template-columns: 1fr 1.4fr;
+  }
+}
