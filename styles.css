@@ -119,6 +119,14 @@ code {
   font-weight: 800;
 }
 
+/* Updated hero subtitle to h2 to fix heading hierarchy error in index.html.
+   Manually styled to match previous h4 appearance. */
+h2.hero-subtitle {
+  font-family: 'Sour Gummy';
+  font-size: 1.125rem;
+  font-weight: 700;
+  color:black;
+}
 
 
 
