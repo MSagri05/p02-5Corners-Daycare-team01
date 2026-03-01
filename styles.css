@@ -332,6 +332,13 @@ article img {
   margin-bottom: 0.75rem;
 }
 
+.logo img {
+  max-width: none;   /* cancels the 60% rule */
+  width: auto;      
+  margin-bottom: 0;  
+ 
+}
+
 
 /*images scroll in horizontal galeery way */
 .gallery-wrap{
