@@ -18,6 +18,7 @@ html {
 body {
   font-family: 'Nunito', sans-serif;  /*standard fonts*/
   color: #000000;  /* standard balck as fall back color */
+  margin: 0;
 }
 
 /* h1 are always Archivo Black, Purple */
@@ -134,6 +135,8 @@ h2.hero-subtitle {
 
 
 .site-footer {
+  position: relative;
+  z-index: 10;
   text-align: center;
   padding: 1.5rem 1rem;
   margin-top: 2rem;
