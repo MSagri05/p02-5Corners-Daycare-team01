@@ -34,7 +34,7 @@ h2 {
   color: #A6CA4E;
   font-size: 2rem;
   font-weight: 700;  /*this makes it more bold */
-  text-align: center;
+
 }
 
 /* h3 is always Archivo Black, Dark Blue */
@@ -97,6 +97,7 @@ code {
   overflow: hidden;               /* hides layers that go outside */
   padding-top: 7rem;              /* so content doesn't sit under navbar */
 }
+
 
 
 /* Keep hero text ABOVE the scene */
@@ -201,7 +202,7 @@ button {
   font-weight: 500;               /* semi bold */
   color: #FFFFFF;               /*changes original black to white only for buttons */
   background-color: #822C91;      /* purple bakcground changes to blue  */
-  padding: 0.5rem 0.75rem;    /* padding around for extra space for ease of reading */
+  padding: 0.4rem 0.75rem;    /* padding around for extra space for ease of reading */
   font-size: 1rem;    
   border: none;    /*to remove border off the sumbit and restart */
 
@@ -1061,6 +1062,11 @@ Responsiveness
   gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.updates-section h2,
+.updates-section .lead{
+  text-align: center;
 }
 
 /* Tablet = 2 columns */
