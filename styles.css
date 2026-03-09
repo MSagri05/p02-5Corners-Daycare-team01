@@ -119,6 +119,10 @@ code {
   font-weight: 800;
 }
 
+h1.hero-title{
+  margin-top: 2.4rem;
+}
+
 /* Updated hero subtitle to h2 to fix heading hierarchy error in index.html.
    Manually styled to match previous h4 appearance. */
 h2.hero-subtitle {
@@ -193,8 +197,8 @@ button {
   font-weight: 500;               /* semi bold */
   color: #FFFFFF;               /*changes original black to white only for buttons */
   background-color: #822C91;      /* purple bakcground changes to blue  */
-  padding: 0.35rem 0.75rem;    /* padding around for extra space for ease of reading */
-  font-size: 0.95rem;    
+  padding: 0.5rem 0.75rem;    /* padding around for extra space for ease of reading */
+  font-size: 1rem;    
   border: none;    /*to remove border off the sumbit and restart */
 
   transition:                      /*again transitions where leanred last year*/
