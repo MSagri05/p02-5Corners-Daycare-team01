@@ -34,6 +34,7 @@ h2 {
   color: #A6CA4E;
   font-size: 2rem;
   font-weight: 700;  /*this makes it more bold */
+  text-align: center;
 }
 
 /* h3 is always Archivo Black, Dark Blue */
