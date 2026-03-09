@@ -131,9 +131,32 @@ h2.hero-subtitle {
 
 .site-footer {
   text-align: center;
-  
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+
+  background-color: #0053A3;   
+  color: #FFFFFF;
+
+  border-top: 0.2rem solid #34C3EF; 
 }
 
+/* footer links */
+.site-footer a {
+  color: #A6CA4E;      
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* hover effect */
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.site-footer p a { /* ADD apacing b/w links */
+  margin: 0 0.35rem;
+}
 
 
 
