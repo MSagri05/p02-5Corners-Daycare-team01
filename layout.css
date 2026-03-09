@@ -8,6 +8,25 @@ section {
   padding: 2rem 1rem;
 }
 
+.team-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team-quote {
+  margin-top: auto;
+}
+
+.update-card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.update-actions{
+  margin-top: auto;
+}
 
 /* PRODUCT GRID */
 .product-grid {
