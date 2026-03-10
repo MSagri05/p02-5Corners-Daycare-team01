@@ -448,16 +448,16 @@ article img {
 
 
 /* CLOUDS */
-.layer-cloud1{ top: 9%;  left: 1%;  width: 16rem; }
-.layer-cloud3{ top: 8%; left: 23%; width: 14rem;}
-.layer-cloud2{ top: 6%; left: 50%; width: 20rem; }
-.layer-cloud4{ top: 15%;  right: 0%; width: 13rem; }
+.layer-cloud1{ top: 9%;  left: 1%;  width: 16rem; z-index: 3;}
+.layer-cloud3{ top: 8%; left: 23%; width: 14rem; z-index: 3;}
+.layer-cloud2{ top: 6%; left: 50%; width: 20rem; z-index: 3;}
+.layer-cloud4{ top: 15%;  right: 0%; width: 13rem; z-index: 3;}
 
 
 /*BIRDS */
-.layer-bird1{ top: 28%; left: 10%; width: 2rem; }
-.layer-bird2{ top: 40%; left: 15%; width: 4rem; }
-.layer-bird3{ top: 30%; right: 18%; width: 3rem; }
+.layer-bird1{ top: 28%; left: 10%; width: 2rem; z-index: 2;}
+.layer-bird2{ top: 40%; left: 15%; width: 4rem; z-index: 2;}
+.layer-bird3{ top: 30%; right: 18%; width: 3rem; z-index: 2;}
 
 /*GROUND OBJECTS*/
 .layer-road{
@@ -468,6 +468,7 @@ article img {
   transform: translateX(-50%);
   object-fit: fill;
   max-width: none;
+  z-index: 1;
 }
 
 
@@ -476,12 +477,26 @@ article img {
   left: 50%;
   transform: translateX(-50%);
   width: 34vw;
+  z-index: 6;
 }
 
-.layer-bush1{ bottom: 22%; right: 26%;  width: 6rem; }
-.layer-bush2{ bottom: 22%; left: 23%; width: 9rem; }
-.layer-ball { bottom: 20%; right: 22%; width: 2rem; }
+.layer-bush1{ bottom: 22%; right: 26%;  width: 6rem; z-index: 4;}
+.layer-bush2{ bottom: 22%; left: 23%; width: 9rem; z-index: 4;}
+.layer-ball { bottom: 20%; right: 22%; width: 2rem; z-index: 5;}
 
+
+@media (max-width: 48rem) {
+
+  .layer-bush1,
+  .layer-bush2 {
+    transform: scale(0.75);
+  }
+
+  .layer-ball {
+    transform: scale(0.7);
+  }
+
+}
 /*................................
 PAGEs and SECTION LAYOUT
 ..................................*/
