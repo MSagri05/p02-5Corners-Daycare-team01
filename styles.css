@@ -238,7 +238,7 @@ button:active {
 input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
 textarea {
   width: 100%;
-  max-width: 32rem;
+  max-width: 30rem;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   color: #000000;
@@ -977,6 +977,11 @@ Responsiveness
   font-weight: 800;
 }
 
+.program-action .button {
+  display: inline-block;
+}
+
+
 .meta-note{
   display: inline-block;
   margin-top: 0.25rem;
@@ -1005,6 +1010,7 @@ Responsiveness
 }
 
 .details-card .button{
+  display: inline-block;
   margin-top: 0.75rem;
 }
 
