@@ -724,6 +724,7 @@ Responsiveness
 .deck-slide{
   min-width: 100%;
   scroll-snap-align: start;
+  scroll-margin-top: 7rem;
 
   padding: 2.5rem 1.25rem;
   background: #eff8d8;
