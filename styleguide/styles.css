@@ -1,24 +1,22 @@
-/* this css file is only for styling purposes and absolutely not for layout*/
+/* this css file is only for styling purposes and absulutly not for layout*/
 
 
 
 
-/*
+/*................................
 TYPOGRAPHY 
 body, h1,2,3,4,p, li, label, input, button, a, code 
-*/
+..................................*/
 
 /* basic text setup */
 html {
   font-size: 100%; /* 16px default so everything is based on this */
-  scroll-behavior: smooth;
 }
 
 /*for all the elements in body*/
 body {
   font-family: 'Nunito', sans-serif;  /*standard fonts*/
   color: #000000;  /* standard balck as fall back color */
-  margin: 0;
 }
 
 /* h1 are always Archivo Black, Purple */
@@ -34,7 +32,6 @@ h2 {
   color: #A6CA4E;
   font-size: 2rem;
   font-weight: 700;  /*this makes it more bold */
-
 }
 
 /* h3 is always Archivo Black, Dark Blue */
@@ -79,36 +76,14 @@ code {
 
 .hero{
   text-align: center;
+  margin-top: 5rem;
   margin-bottom: 0rem;
   font-size: 4rem;
-  position: relative;              /* creates a positioning context */
-  overflow: hidden;               /* hides layers that go outside */
-  padding-top: 2rem;              /* so content doesn't sit under navbar */
-}
-
-
-.hero1{
-  text-align: center;
-  margin-bottom: 0rem;
-  font-size: 4rem;
-  position: relative;              /* creates a positioning context */
-  background: #e2f1f6;            /*  light blue */
-  min-height: 80vh;              /* full screen */
-  overflow: hidden;               /* hides layers that go outside */
-  padding-top: 7rem;              /* so content doesn't sit under navbar */
-}
-
-
-
-/* Keep hero text ABOVE the scene */
-.hero-inner{
-  position: relative;
-  z-index: 5;                     /* higher than the images */
 }
 
 .lead{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 0;
 }
 
@@ -122,54 +97,17 @@ code {
   font-weight: 800;
 }
 
-h1.hero-title{
-  margin-top: 2.4rem;
-}
-
-/* Updated hero subtitle to h2 to fix heading hierarchy error in index.html.
-   Manually styled to match previous h4 appearance. */
-h2.hero-subtitle {
-  font-family: 'Sour Gummy';
-  font-size: 1.125rem;
-  font-weight: 700;
-  color:black;
-}
-
-
-.site-footer {
-  position: relative;
-  z-index: 10;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
-
-  background-color: #0053A3;   
+.name-program{
   color: #FFFFFF;
-
-  border-top: 0.2rem solid #34C3EF; 
-}
-
-/* footer links */
-.site-footer a {
-  color: #A6CA4E;      
-  text-decoration: none;
-  font-weight: 700;
-}
-
-/* hover effect */
-.site-footer a:hover,
-.site-footer a:focus-visible {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-.site-footer p a { /* ADD apacing b/w links */
-  margin: 0 0.35rem;
 }
 
 
 
-/*INTERACTIVE ELEMENTS*/
+
+
+/*................................
+INTERACTIVE ELEMENTS 
+..................................*/
 
 /*In-text-----------------------------------------------------------------------------------*/
 /* In-text link are blue and change to purple */
@@ -200,8 +138,8 @@ button {
   font-weight: 500;               /* semi bold */
   color: #FFFFFF;               /*changes original black to white only for buttons */
   background-color: #822C91;      /* purple bakcground changes to blue  */
-  padding: 0.4rem 0.75rem;    /* padding around for extra space for ease of reading */
-  font-size: 1rem;    
+  padding: 0.35rem 0.75rem;    /* padding around for extra space for ease of reading */
+  font-size: 0.95rem;    
   border: none;    /*to remove border off the sumbit and restart */
 
   transition:                      /*again transitions where leanred last year*/
@@ -236,7 +174,7 @@ button:active {
 input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
 textarea {
   width: 100%;
-  max-width: 30rem;
+  max-width: 32rem;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   color: #000000;
@@ -298,7 +236,12 @@ input[type="radio"]:checked + label {
 
 
 
-/*IMAGES*/
+
+
+
+/*................................
+IMAGES
+..................................*/
 
 /*Standard sizing for images */
 img { 
@@ -360,13 +303,6 @@ article img {
   margin-bottom: 0.75rem;
 }
 
-.logo img {
-  max-width: none;   /* cancels the 60% rule */
-  width: auto;      
-  margin-bottom: 0;  
- 
-}
-
 
 /*images scroll in horizontal galeery way */
 .gallery-wrap{
@@ -405,96 +341,9 @@ article img {
   display: block;      /* removes inline spacing */
   margin: 0 auto;      /* centers horizontally */
 }
-
-.parallax-scene{
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-
-}
-
-
-.parallax-scene img{
-  margin: 0;         /* cancels global margin-bottom */
-  display: block;
-}
-
-.parallax-scene .layer{
-  position: absolute;
-}
-
-
-.hero-subtitle{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.hero-title{
-  margin: 0;
-}
-.hero-badge{
-  margin-bottom: 0;
-  margin-top: 2rem;
-}
-
-
-/* CLOUDS */
-.layer-cloud1{ top: 9%;  left: 1%;  width: 16rem; z-index: 3;}
-.layer-cloud3{ top: 8%; left: 23%; width: 14rem; z-index: 3;}
-.layer-cloud2{ top: 6%; left: 50%; width: 20rem; z-index: 3;}
-.layer-cloud4{ top: 15%;  right: 0%; width: 13rem; z-index: 3;}
-
-
-/*BIRDS */
-.layer-bird1{ top: 28%; left: 10%; width: 2rem; z-index: 2;}
-.layer-bird2{ top: 40%; left: 15%; width: 4rem; z-index: 2;}
-.layer-bird3{ top: 30%; right: 18%; width: 3rem; z-index: 2;}
-
-/*GROUND OBJECTS*/
-.layer-road{
-  bottom: 0;
-  left: 50%;
-  width: 100vw;
-  height: 25vh;        /* control thickness here */
-  transform: translateX(-50%);
-  object-fit: fill;
-  max-width: none;
-  z-index: 1;
-}
-
-
-.layer-daycare{
-  bottom: 22%; 
-  left: 50%;
-  transform: translateX(-50%);
-  width: 34vw;
-  z-index: 6;
-}
-
-.layer-bush1{ bottom: 22%; right: 26%;  width: 6rem; z-index: 4;}
-.layer-bush2{ bottom: 22%; left: 23%; width: 9rem; z-index: 4;}
-.layer-ball { bottom: 20%; right: 22%; width: 2rem; z-index: 5;}
-
-
-@media (max-width: 48rem) {
-
-  .layer-bush1,
-  .layer-bush2 {
-    transform: scale(0.75);
-  }
-
-  .layer-ball {
-    transform: scale(0.7);
-  }
-
-}
-/*
-PAGEs and SECTION LAYOUT*/
+/*................................
+PAGEs and SECTION LAYOUT
+..................................*/
 
 /*section cards */
 section {
@@ -584,12 +433,18 @@ article h4{
   font-weight: 700;
 }
 
-.details-card{
+.details-card1,
+.details-card3{
+  background-color: #34C3EF;
   outline: none;
-  border-radius: 2rem;
-  background-color: white;
+  border-radius: 0%;
 }
 
+.details-card2{
+  background-color: #A6CA4E;
+  outline: none;
+  border-radius: 0%;
+}
 
 .checkout-cart{
   border: none;
@@ -602,7 +457,9 @@ article h4{
 
 
 
-/*BRAND COMPONENTS*/
+/*...............................
+BRAND COMPONENTS
+.............................*/
 /*brand fonts */
 .font-sample.archivo {
   font-family: "Archivo Black", sans-serif;
@@ -640,15 +497,17 @@ article h4{
 .swatch.black { background-color: #000000; }
 
 
-#about{
-  position: relative;
-  z-index: 10;         /* above the fixed parallax scene */
-  background: #ffffff; 
-}
 
 
-/*
-Responsiveness*/
+
+
+
+
+
+
+/*..............................
+Responsiveness
+................................*/
 
 /*MOBILE*/
 @media (max-width: 26.25rem) { /*420px */
@@ -688,400 +547,3 @@ Responsiveness*/
   }
 }
 
-
-/* ABOUT SLIDE DECK      */
-
-.about-deck{
-  background: #eff8d8;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-/* Horizontal scroll container */
-.deck{
-  display: flex;
-  overflow-x: auto;                 /* mouse / trackpad scroll */
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-
-  background: #eff8d8;
-  
-  -ms-overflow-style: none;  /* IE + Edge */
-  scrollbar-width: none;     /* Firefox */
-  border-radius: 1rem;
-
-}
-
-
-
-/* subtle scrollbar */
-.deck::-webkit-scrollbar{
-  height: 6px;
-  display: none;            
-}
-.deck::-webkit-scrollbar-thumb{
-  background: rgba(0,0,0,0.15);
-  border-radius: 10px;
-}
-
-/* Each slide */
-.deck-slide{
-  min-width: 100%;
-  scroll-snap-align: start;
-  scroll-margin-top: 7rem;
-
-  padding: 2.5rem 1.25rem;
-  background: #eff8d8;
-
-  border: none;
-  box-shadow: none; 
-}
-
-
-/* Larger screens spacing */
-@media (min-width: 64rem){
-  .deck-slide{
-    padding: 3rem 2.5rem;
-  }
-}
-
-/* Remove global article hover effect */
-.deck-slide:hover{
-  transform: none;
-  box-shadow: none;
-  border-color: transparent;
-}
-
-/* Content width */
-.slide-content{
-  max-width: 70ch;
-  margin: 0 auto;
-}
-
-/* Lists */
-.deck-slide ul{
-  margin: 0.75rem 0 0;
-  padding-left: 1.25rem;
-}
-.deck-slide li{
-  margin-bottom: 0.4rem;
-}
-
-/* Arrow navigation aligned with content */
-.slide-nav{
-  max-width: 70ch;
-  margin: 2rem auto 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.slide-spacer{
-  width: 4rem;
-}
-
-/* Buttons inside slides aligned left */
-.cta-row{
-  display: flex;
-  gap: 0.75rem;
-  justify-content: flex-start;
-  margin-top: 1rem;
-}
-
-/* DOTS UNDER SLIDES            */
-
-.deck-pages{
-  display: flex;
-  justify-content: center;
-  gap: 0.4rem;
-  background: #eff8d8;     
-  padding: 1rem 0 1.25rem;  /* space around dots */
-  margin: 0;
-  border-radius: 2rem;
-
-}
-
-/* Smaller clean dots */
-.page-dot{
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background: rgba(0, 83, 163, 0.4);
-  border: none;
-  display: inline-block;
-  transition: transform 0.18s ease, background-color 0.18s ease;
-}
-
-.page-dot:hover{
-  transform: scale(1.2);
-  background: #822C91;
-}
-
-/* Default first active */
-.page-dot:first-child{
-  background: #822C91;
-}
-
-.about-deck {
-  margin: 2rem;
-}
-
-/* MEET THE TEAM                 */
-
-.team-section{
-  background: #e2f1f6;   /* clean section */
-  border: 0;
-}
-
-/* Grid layout */
-.team-grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-/* Card */
-.team-card{
-  background: #FFFFFF;
-  border: 0.12rem solid rgba(0, 83, 163, 0.18); /* soft blue border */
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 0.35rem 1rem rgba(0,0,0,0.06);
-}
-
-/* Photo */
-.team-photo{
-  width: 100%;
-  max-width: 14rem;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 1rem;
-  margin: 0 auto 0.75rem;
-}
-
-/* Text */
-.team-name{
-  margin: 0.25rem 0 0;
-  text-align: center;
-}
-
-.team-role{
-  margin: 0.35rem 0 0.75rem;
-  text-align: center;
-  font-weight: 800;
-  color: #822C91; /* purple from  palette */
-  font-family: "Nunito", sans-serif;
-}
-
-/* Body text */
-.team-desc{
-  margin: 0 0 0.75rem;
-  line-height: 1.6;
-}
-
-/* Quote block */
-.team-quote{
-  margin: 0;
-  padding: 0.85rem 1rem;
-  border-radius: 1rem;
-  background: rgba(52, 195, 239, 0.18); /* light-blue tint */
-  font-style: italic;
-  line-height: 1.6;
-}
-
-/* Tablet: 2 columns */
-@media (min-width: 48rem){
-  .team-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Desktop: 4 columns */
-@media (min-width: 64rem){
-  .team-grid{
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .team-photo{
-    max-width: 100%;
-  }
-}
-
-#team{
-  position: relative;
-  z-index: 10;   /* higher than parallax */
-}
-
-#team h2{
-  text-align: center;
-}
-
-.program-age{
-  font-weight: 700;
-  color: #822C91;   
-  margin-top: 0;
-}
-
-
-.program-title{
-  margin-bottom: 0;
-}
-
-.program-info{
-  margin: 0.5rem;
-}
-
-.programs-page{
-  background-color: #e2f1f6;  /*  light blue */
-}
-
-.contacts-page{ /*same for contact page */
-  background-color: #e2f1f6;  /*  light blue */
-}
-
-.location-page{
-  background-color: #e2f1f6; 
-}
-
-
-/* PROGRAM DETAILS (details-card) */
-
-.details-card{
-  background: #FFFFFF;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-}
-
-/* Program paragraph spacing */
-.details-card p{
-  margin: 0.5rem 0;
-  line-height: 1.6;
-}
-
-/* Info paragraph under title */
-.program-info{
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-/* Meta lines: Age + Ratio */
-.program-meta{
-  margin: 0.35rem 0;
-}
-
-.program-meta strong{
-  color: #0053A3;   /* dark blue */
-  font-weight: 800;
-}
-
-.program-action .button {
-  display: inline-block;
-}
-
-
-.meta-note{
-  display: inline-block;
-  margin-top: 0.25rem;
-  color: rgba(0,0,0,0.75);
-  font-size: 0.95rem;
-}
-
-/* Daily Program heading */
-.daily-title{
-  margin: 1.1rem 0 0.5rem;
-  color: #0053A3;         /* uses  h4 style but match blue */
-}
-
-/* Daily list styling */
-.daily-list{
-  margin: 0;
-  padding-left: 1.2rem;
-  display: grid;
-  gap: 0.35rem;
-}
-
-/* Make list items feel “clean” */
-.daily-list li{
-  margin: 0;
-  line-height: 1.4;
-}
-
-.details-card .button{
-  display: inline-block;
-  margin-top: 0.75rem;
-}
-
-
-/* EVENTS & UPDATES              */
-
-#updates{
-  position: relative;
-  z-index: 10; /* stays above parallax layers */
-}
-
-.updates-section{
-  background: #eff8d8; /* light blue like  theme */
-  border: 0;
-}
-
-.updates-grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.update-card{
-  background: #FFFFFF;
-  border: 0.12rem solid rgba(0, 83, 163, 0.18);
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 0.35rem 1rem rgba(0,0,0,0.06);
-}
-
-/* small month tag */
-.update-month{
-  margin: 0 0 0.5rem;
-  font-weight: 800;
-  color: #822C91; /* purple */
-  font-family: "Nunito", sans-serif;
-}
-
-/* keep h3 spacing tight */
-.update-title{
-  margin: 0 0 0.5rem;
-}
-
-.update-text{
-  margin: 0 0 0.9rem;
-  line-height: 1.6;
-}
-
-.update-actions{
-  margin: 0;
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.updates-section h2,
-.updates-section .lead{
-  text-align: center;
-}
-
-/* Tablet = 2 columns */
-@media (min-width: 48rem){
-  .updates-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Desktop = 3 columns */
-@media (min-width: 64rem){
-  .updates-grid{
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
