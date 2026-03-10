@@ -3,10 +3,10 @@
 
 
 
-/*................................
+/*
 TYPOGRAPHY 
 body, h1,2,3,4,p, li, label, input, button, a, code 
-..................................*/
+*/
 
 /* basic text setup */
 html {
@@ -169,9 +169,7 @@ h2.hero-subtitle {
 
 
 
-/*................................
-INTERACTIVE ELEMENTS 
-..................................*/
+/*INTERACTIVE ELEMENTS*/
 
 /*In-text-----------------------------------------------------------------------------------*/
 /* In-text link are blue and change to purple */
@@ -300,9 +298,7 @@ input[type="radio"]:checked + label {
 
 
 
-/*................................
-IMAGES
-..................................*/
+/*IMAGES*/
 
 /*Standard sizing for images */
 img { 
@@ -497,9 +493,8 @@ article img {
   }
 
 }
-/*................................
-PAGEs and SECTION LAYOUT
-..................................*/
+/*
+PAGEs and SECTION LAYOUT*/
 
 /*section cards */
 section {
@@ -607,9 +602,7 @@ article h4{
 
 
 
-/*...............................
-BRAND COMPONENTS
-.............................*/
+/*BRAND COMPONENTS*/
 /*brand fonts */
 .font-sample.archivo {
   font-family: "Archivo Black", sans-serif;
@@ -654,9 +647,8 @@ BRAND COMPONENTS
 }
 
 
-/*..............................
-Responsiveness
-................................*/
+/*
+Responsiveness*/
 
 /*MOBILE*/
 @media (max-width: 26.25rem) { /*420px */
@@ -697,9 +689,7 @@ Responsiveness
 }
 
 
-/* ============================= */
-/* ABOUT SLIDE DECK — CLEAN     */
-/* ============================= */
+/* ABOUT SLIDE DECK      */
 
 .about-deck{
   background: #eff8d8;
@@ -799,9 +789,7 @@ Responsiveness
   margin-top: 1rem;
 }
 
-/* ============================= */
 /* DOTS UNDER SLIDES            */
-/* ============================= */
 
 .deck-pages{
   display: flex;
@@ -839,9 +827,7 @@ Responsiveness
   margin: 2rem;
 }
 
-/* ============================= */
 /* MEET THE TEAM                 */
-/* ============================= */
 
 .team-section{
   background: #e2f1f6;   /* clean section */
@@ -960,10 +946,7 @@ Responsiveness
 }
 
 
-
-/* ============================= */
 /* PROGRAM DETAILS (details-card) */
-/* ============================= */
 
 .details-card{
   background: #FFFFFF;
@@ -1031,9 +1014,7 @@ Responsiveness
 }
 
 
-/* ============================= */
 /* EVENTS & UPDATES              */
-/* ============================= */
 
 #updates{
   position: relative;
