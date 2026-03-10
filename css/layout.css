@@ -3,11 +3,37 @@ css grid layout: https://www.w3schools.com/css/css_grid.asp
 css flexbox: https://www.w3schools.com/css/css3_flexbox.asp
 css responsivness: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 /* Main section spacing */
 section {
   padding: 2rem 1rem;
 }
 
+.team-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team-quote {
+  margin-top: auto;
+}
+
+.update-card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.update-actions{
+  margin-top: auto;
+}
 
 /* PRODUCT GRID */
 .product-grid {

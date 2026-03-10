@@ -18,6 +18,7 @@ html {
 body {
   font-family: 'Nunito', sans-serif;  /*standard fonts*/
   color: #000000;  /* standard balck as fall back color */
+  margin: 0;
 }
 
 /* h1 are always Archivo Black, Purple */
@@ -33,6 +34,7 @@ h2 {
   color: #A6CA4E;
   font-size: 2rem;
   font-weight: 700;  /*this makes it more bold */
+
 }
 
 /* h3 is always Archivo Black, Dark Blue */
@@ -97,6 +99,7 @@ code {
 }
 
 
+
 /* Keep hero text ABOVE the scene */
 .hero-inner{
   position: relative;
@@ -119,6 +122,10 @@ code {
   font-weight: 800;
 }
 
+h1.hero-title{
+  margin-top: 2.4rem;
+}
+
 /* Updated hero subtitle to h2 to fix heading hierarchy error in index.html.
    Manually styled to match previous h4 appearance. */
 h2.hero-subtitle {
@@ -130,10 +137,35 @@ h2.hero-subtitle {
 
 
 .site-footer {
+  position: relative;
+  z-index: 10;
   text-align: center;
-  
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+
+  background-color: #0053A3;   
+  color: #FFFFFF;
+
+  border-top: 0.2rem solid #34C3EF; 
 }
 
+/* footer links */
+.site-footer a {
+  color: #A6CA4E;      
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* hover effect */
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.site-footer p a { /* ADD apacing b/w links */
+  margin: 0 0.35rem;
+}
 
 
 
@@ -170,8 +202,8 @@ button {
   font-weight: 500;               /* semi bold */
   color: #FFFFFF;               /*changes original black to white only for buttons */
   background-color: #822C91;      /* purple bakcground changes to blue  */
-  padding: 0.35rem 0.75rem;    /* padding around for extra space for ease of reading */
-  font-size: 0.95rem;    
+  padding: 0.4rem 0.75rem;    /* padding around for extra space for ease of reading */
+  font-size: 1rem;    
   border: none;    /*to remove border off the sumbit and restart */
 
   transition:                      /*again transitions where leanred last year*/
@@ -206,7 +238,7 @@ button:active {
 input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
 textarea {
   width: 100%;
-  max-width: 32rem;
+  max-width: 30rem;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   color: #000000;
@@ -692,6 +724,7 @@ Responsiveness
 .deck-slide{
   min-width: 100%;
   scroll-snap-align: start;
+  scroll-margin-top: 7rem;
 
   padding: 2.5rem 1.25rem;
   background: #eff8d8;
@@ -945,6 +978,11 @@ Responsiveness
   font-weight: 800;
 }
 
+.program-action .button {
+  display: inline-block;
+}
+
+
 .meta-note{
   display: inline-block;
   margin-top: 0.25rem;
@@ -973,6 +1011,7 @@ Responsiveness
 }
 
 .details-card .button{
+  display: inline-block;
   margin-top: 0.75rem;
 }
 
@@ -1030,6 +1069,11 @@ Responsiveness
   gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.updates-section h2,
+.updates-section .lead{
+  text-align: center;
 }
 
 /* Tablet = 2 columns */
